@@ -3,9 +3,17 @@
 一天夜里，准程序员[ddy](https://twitter.com/ddy_mainland)从睡梦中醒来，窗外闪烁着炫目的灯光，0x807船长驾驶着神秘的飞船接他去web3的宇宙航行。在旅途中，ddy会记录下自己的见闻和思考，打开他的日记本，一笔一划地写下ddy的web3漫游日记。
 
 
+<div align="center">
+	<img width="500" src="https://user-images.githubusercontent.com/25214732/196032084-6c1d6531-2a80-4672-b620-04b9e4ae3baa.PNG" alt="DF GAIA">
+</div>
 
+<p align="center">
+	<b>DDY WEB3 TOUR</b>
+</p>
 
-
+<p align="center">
+  Contributor: <a href="https://twitter.com/ddy_mainland">@ddy_mainland</a>
+</p>
 
 
 
