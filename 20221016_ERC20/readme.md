@@ -210,7 +210,7 @@ Upgradeablity : transparent && UUPS   https://docs.alchemy.com/docs/how-to-creat
 
 Minimi Token. ERC20 compatible clonable token  https://github.com/Giveth/minime commit-id ea04d95
 
-钓鱼erc20合约
+钓鱼ERC20合约
 
 
 
