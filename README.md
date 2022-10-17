@@ -20,8 +20,7 @@
 
 
 
-
-**ERC20初探篇**  [mirror](https://mirror.xyz/byeddy.eth/-MTngpDoIbgOsN3gGaqGQ_6U7obIh9PGWhnfdp7EGVk) | [github](https://github.com/fromddy/ddyWeb3Tour/tree/main/20221016_ERC20)
+**ERC20初探篇**  [mirror](https://mirror.xyz/byeddy.eth/-MTngpDoIbgOsN3gGaqGQ_6U7obIh9PGWhnfdp7EGVk) | [github](https://github.com/fromddy/ddyWeb3Tour/tree/main/20221016_ERC20)       **ERC20** **WETH** **USDT** **OPENZEPPLIN**
 
 
 
