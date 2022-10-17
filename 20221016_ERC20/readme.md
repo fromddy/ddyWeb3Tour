@@ -16,11 +16,11 @@
 </p>
 初次发布: 2022.10.16 / 最新修改2022.10.17
 
-关键词: **ERC20** **WETH** **USDT** **OPENZEPPLIN**
+关键词: **ERC20** **WETH** **USDT** **openzepplin**
 
 ## 上手建议
 
-学习ERC20可以先阅读[wtf.cademy的erc20章节](https://wtf.academy/solidity-advanced/ERC20/) ，建立一个基础的理解。
+学习ERC20可以先阅读[wtf.cademy的ERC20章节](https://wtf.academy/solidity-advanced/ERC20/) ，建立一个基础的理解。
 
 然后阅读[openzepplin的文档](https://docs.openzeppelin.com/contracts/4.x/)当中的 Tokens/ERC20，Tokens/ERC20/Creating Supply， 目前openzepplin最新版是4.0，支持的solidity ^0.8.0。
 
@@ -144,7 +144,7 @@ openzepplin写的注释是相当的好，赞赞赞。
 
 介绍网站: https://weth.io/ 
 
-网站当中提到 erc223 是一个erc20的替代方案。
+网站当中提到 ERC223 是一个ERC20的替代方案。
 
 weth address: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
 
@@ -178,7 +178,7 @@ Expected a state variable declaration. If you intended this as a fallback functi
 
 欢迎大家持续关注，之后和ERC20相关的内容包括但不限于:
 
-erc223 
+ERC223 
 
 usdt源码分析
 
