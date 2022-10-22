@@ -63,7 +63,7 @@ utils/当中的TokenTimelock.sol
 
 
 
-实现了一个解仓的逻辑，是需要有一个IERC20的智能合约持有token, 然后这个TokenTimelock的智能合约再调用IERC20的智能合约，感觉需要IERC20的合约里面有足够的token，以及这个智能合约有操作token的权限才能够实现成功的release。
+实现了一个锁仓的逻辑，是需要有一个IERC20的智能合约持有token, 然后这个TokenTimelock的智能合约再调用IERC20的智能合约，感觉需要IERC20的合约里面有足够的token，以及这个智能合约有操作token的权限才能够实现成功的release。
 
 可能更符合去中心化思路的是直接一个合约，ERC20的钱直接打到这个合约账户，实现锁仓的相关逻辑。
 
