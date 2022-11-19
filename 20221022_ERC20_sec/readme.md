@@ -63,7 +63,7 @@ utils/当中的TokenTimelock.sol
 
 
 
-实现了一个锁仓的逻辑，是需要有一个IERC20的智能合约持有token, 然后这个TokenTimelock的智能合约再调用IERC20的智能合约，感觉需要IERC20的合约里面有足够的token，以及这个智能合约有操作token的权限才能够实现成功的release。
+实现了一个锁仓的逻辑，是需要有一个IERC20的智能合约持有token, 然后这个TokenTimelock的智能合约再调用IERC20的智能合约，需要IERC20的合约里面有足够的token，以及TokenTimelock的智能合约有操作token的权限才能够实现成功的release。
 
 可能更符合去中心化思路的是直接一个合约，ERC20的钱直接打到这个合约账户，实现锁仓的相关逻辑。
 
@@ -131,8 +131,6 @@ it standardize tokenized vaults to make protocol integration easier and less pro
 
 EOA 需要通过 一些检查的wrapper来进行操作, 比如 [fei protocol的 ERC4626Router](https://github.com/fei-protocol/ERC4626#erc4626router-and-base)
 
-
-
 实现的了IERC4626 的接口，接口代码文件位置: @openzepplin/interfaces/IERC4626.sol
 
 #### 用到的金融的词汇
@@ -147,7 +145,7 @@ deposit 存款， redeem赎回
 
 asset()  返回 underlying token 的地址
 
-totalAssets() 返回underlying token被金库合约
+totalAssets() 返回underlying token被金库合约所管理的数量
 
 **converToShares()** 在满足 所有条件的情况下（条件在注释当中给出)  能换到shareToken的数量
 
@@ -175,21 +173,37 @@ _convertToAssets() 其实也是同理
 
 
 
+下面是四组函数，分别对应 deposit（存款)， withdraw（提款）， mint 和 redeem 
+
+maxDeposit/previewDeposit/deposit
+
+maxMint/previewMint/mint
+
+maxWithdraw/previewWithdraw/withdraw
+
+maxRedeem/previewRedeem/redeem
+
+
+
 **_deposit() && _withdraw() **
 
 注释当中对于针对ERC777的重入攻击进行了一定的分析
+
+```solidity
+首先改变调用者的状态，然后改变合约本身的状态，从而可以保证合约的安全。
+```
+
+
 
 #### 关于ERC4626 要更进一步分析的地方
 
 erc777
 
-可能的重入攻击的分析 [fei protocol的 ERC4626Router](https://github.com/fei-protocol/ERC4626#erc4626router-and-base)
+可能的重入攻击的分析 
 
-滑点问题的分析
+滑点问题的分析 [fei protocol的 ERC4626Router](https://github.com/fei-protocol/ERC4626#erc4626router-and-base)
 
-```
-真的是递归学习啊，感觉扩展的内容好多呀
-```
+
 
 ### What's Next...
 
@@ -197,7 +211,7 @@ erc777
 
 ERC223 
 
-ERC20, ERC777, ERC223
+ERC777
 
 yearn finance
 
@@ -208,6 +222,8 @@ DAI源码分析
 usdc源码分析
 
 shibtoken源码分析
+
+
 
 
 
@@ -231,13 +247,7 @@ Minimi Token. ERC20 compatible clonable token  https://github.com/Giveth/minime 
 
 
 
-### 懂得都懂
 
-既然都看到结尾了，0x807船长诚挚地邀请您 :-)
-
-关注ddy的推特 [@ddy_mainland](https://twitter.com/ddy_mainland)
-
-为github仓库star [ddyWeb3Tour](https://github.com/fromddy/ddyWeb3Tour) 
 
 
 
