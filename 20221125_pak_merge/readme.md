@@ -66,31 +66,23 @@ interface IMergeMetadata {
 }
 ```
 
-这个contract实现了上述的接口，
+这个contract实现了上述的接口，可见最关键的就是tokenMetadata函数， 
 
-可见最关键的就是tokenMetadata函数， 
-
-在输入上述展示的参数的情况下，能够输出一个string类型的metadata信息。
+在输入上述展示的参数的情况下，能够输出一个string类型的metadata信息(以json格式)。
 
 一般NFT的实现会存储去中心化存储服务的地址，
 
 比较标新立异的NFT项目（例如loot）就会存储svg格式的信息，
 
-在阅读The Merge代码的时候，我们惊喜地发现，这两种metadata的实现方式实际上都存在于代码当中。
+在阅读The Merge代码的时候，我惊喜地发现，这两种metadata的实现方式实际上都存在于代码当中。
 
 
 
+## Merge.sol
 
+merge主要的逻辑其实是实现了 ERC721, 以及最为重要的Merge函数。
 
-
-
-
-
-The Merge
-
-
-
- 
+初次看的时候感觉比较惊艳，感觉工程上有可以优化的空间。
 
 
 
